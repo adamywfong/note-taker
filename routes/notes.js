@@ -16,7 +16,7 @@ notes.delete('/:note_id', (req, res) => {
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
-      // Make a new array of all tips except the one with the ID provided in the URL
+      // Make a new array of all notes except the one with the ID provided in the URL
       const result = json.filter((note) => note.id !== noteId);
       // Save that array to the filesystem
       writeToFile('./db/db.json', result);
@@ -38,6 +38,7 @@ notes.post('/', (req, res) => {
       id: Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1)
     };
     readAndAppend(newNote, './db/db.json');
+    res.json(`Note added successfully`);
   } else {
     res.error('Error in adding note');
   }
