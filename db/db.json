@@ -1,27 +1,17 @@
 [
     {
+        "title": "Example Note",
+        "text": "Making a note here",
+        "id": "0c4a"
+    },
+    {
         "title": "New Note",
-        "text": "Making a new note",
-        "id": "1"
+        "text": "New notes are made like so",
+        "id": "3bf7"
     },
     {
-        "title": "Hello",
-        "text": "Testing",
-        "id": "3b82f4dd-8b0a-4ecf-a1d4-e5361b4aff3a"
-    },
-    {
-        "title": "FreeHat",
-        "text": "For everyone",
-        "id": "8bee9b0f-0c93-4def-bdea-e435570867b9"
-    },
-    {
-        "title": "Candy",
-        "text": "sweet",
-        "id": "ce3e"
-    },
-    {
-        "title": "response",
-        "text": "is there a response?",
-        "id": "8bfe"
+        "title": "Buy bread",
+        "text": "Buy more bread to eat",
+        "id": "389d"
     }
 ]
